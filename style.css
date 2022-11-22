@@ -1,0 +1,73 @@
+/* 
+comment 
+*/
+
+/* 
+applies style to all elements of body element
+*/
+body {
+    /* change the background color */
+    /* background-color: lightgray; */
+    /* change the background-image */
+    background-image: url(https://design-style-guide.freecodecamp.org/downloads/fcc_primary_small.jpg);
+    background-position: right top;
+}
+
+/* 
+applies style to h1 and p elements
+*/
+h1, p{
+    background-color: rgb(224, 134, 16);
+}
+
+b {
+    margin-top: 50 px;
+}
+
+p {
+    /* margin: inherit; -> margin will be equal parent div */
+    /* applies distance from chosen margin -> %/px */
+    /* margin-left: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    */
+    /* applies margin -> top right bottom left*/
+     margin: inherit; /*50px 50px 50px 50px; /* equal to margin: 50px 50px */
+                                 /*                top/bottom || left/right */
+                                 /* margin: 50px -> all margins = 50px */
+}
+
+
+
+/* 
+applies style to element of id = "header2" -> need to use #
+*/
+#header2 {
+    background-color: lime;
+}
+
+/* 
+applies style to element of class = "heading" -> need to use .
+ability to specify wich element
+*/
+h3.heading {
+    /* color: blue;
+       border-style: style of border -> dotted/dashed/groove/solid/double/ridge/outset/inset/none/hidden
+       border-style:                dashed double dotted solid;
+       if multiple are applied ->  top  right bottom  left 
+       border-width: 4px 7px 9px 3px;
+       border-color: orange darkblue darkgray red;
+       border-top/right/bottom/left-style: ...
+       border-radius: 20px; */
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+/* 
+applies style to all elements of the page
+*/
+* {
+    color:rgb(200, 58, 212);
+}
+

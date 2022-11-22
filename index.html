@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+  change the name of the tab in web browser
+  -->
+  <title>My page</title>
+
+  <!--
+  use css
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+  change the icon that appears on tab in the web browser
+  -->
+  <link rel="icon" href="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg">
+  
+  
+</head>
+
+<body>
+  <!--
+  to be commented
+  -->
+  <!--
+  various types of headers
+  -->
+  <h1>First Heading</h1>
+  <h2 id="header2">Second Heading</h2>
+  <h3 class="heading">Third Heading - to test css</h3>
+  <h3 id="header2" class="heading">Third Heading - to test css</h3>
+
+  <b>
+    <p class="heading">testing css</p>
+  </b>
+  <!--
+  pre command to write full paragraphs
+  -->
+  <pre>
+    this a test paragraph,
+    <hr> <!-- line seperator -->
+    this is a new line
+    <hr>
+    another one
+    <hr>
+    and another one
+  </pre>
+
+  <pre>
+    <!--
+    write text in bold
+    -->
+    <b>this is a bold text</b>
+   
+    <strong>this is strong</strong>
+
+    <!--
+    write text in italic
+    -->
+    <em>emphasized</em>
+  
+    <i>italic</i>
+
+    <!--
+    mark some text with color
+    -->
+    Mark this <mark>important information</mark>
+
+    <!--
+  cross text with line over it
+  -->
+    Dont do this: <del>do not do it!</del>
+
+    <!--
+  underline text
+  -->
+    <ins>inserted text</ins>
+
+    <!--
+  write small text
+  -->
+    <small>this is small</small>
+
+    <!--
+  numbers upperline or underline
+  -->
+    O<sub>2</sub>
+
+    7<sup>3</sup>
+  </pre>
+
+  <br>
+  <!--
+  how to write link
+  target="_blank" -> open in new tab
+  -->
+  <a href="https://google.com" target="_blank">click this link</a>
+
+  <!--
+  link to send email to specified email contact
+  -->
+  <a href="mailto:sample@sample.com">Send me an email</a>
+  
+  <br>
+  <!--
+  implement img with url link
+  define width and height
+  alt for console
+  -->
+  <img src="https://styles.redditmedia.com/t5_2r5i1/styles/communityIcon_x4lqmqzu1hi81.jpg" height="200" width="200"
+    alt="this is an image of a cute cat">
+
+
+  <!--
+  style tag lets change text color aswell as bg color
+  -->
+  <pre>
+    <h1 style="color:blue; background-color: red;">this is my heading with style</h1>
+  </pre>
+
+  <!--
+  draw tables
+  tr -> each table row
+  th -> table header
+  td -> table data
+  -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Class</th>
+    </tr>
+    
+    <tr>
+      <td>Afonso</td>
+      <td>23</td>
+      <td>Year 6</td>
+    </tr>
+
+    <tr>
+      <td>Henrique</td>
+      <td>22</td>
+      <td>Year 5</td>
+    </tr>
+
+    <tr>
+      <td>Pedro</td>
+      <td>21</td>
+      <td>Year 4</td>
+    </tr>
+  </table>
+
+  <!--
+  draw lists
+  ul -> .  .  .
+  ol -> 1. 2. 3.
+  dl -> add description in the next line
+  -->
+  <ul>
+    <li>Name 1</li>
+    <li>Name 2</li>
+    <li>Name 3</li>
+  </ul>
+  
+  <ol>
+    <li>Name 1</li>
+    <li>Name 2</li>
+    <li>Name 3</li>
+  </ol>
+
+  <dl>
+    <dt>Name 1</dt>
+    <dd>* This is the first name</dd>
+    <dt>Name 2</dt>
+    <dd>* This is the second name</dd>
+  </dl>
+
+  <!--
+  div tag its a wrapper and you can style it individualy
+  -->
+
+  <div style="color: green; background-color: blue;">
+    <h1>First div with style</h1>
+    <p>this is a text <b>bold one</b></p>
+  </div>
+
+
+  <div style="color: red; background-color: purple;">
+    <h2>Another div with different style</h2>
+    <b>hi!</b>
+  </div>
+  
+  <br>
+
+  <!--
+  iframe is used to display a web page within a web page
+  -->
+  <iframe src="https://google.com" title="this is a title" name="demoname" height="100" width="300" style="border: none;"></iframe>
+  
+  <!--
+  code below can change the iframe upon click
+  -->
+  <p><a href="https://replit.com/~" target="demoname">Click to change ⬆️  replit homepage</a></p>
+
+  <!--
+  symbols -> use &
+  -->
+  <p>this is a euro symbol &euro;</p>
+  <p>this is a copyright symbol &#169;</p>
+  <p>this is a registered sign &#174;</p>
+  <br>
+  
+  <!--
+  forms -> to collect data
+  label for -> 'for' defines the label for the specified id
+  input type = "text/checkbox/radio/submit" -> defines what type of input will appear
+  input name = "string"
+  input id = "string" -> id of the form
+  input value = "string" -> value of the checkbox if it is selected that will be submitted
+  input type="submit" -> send data from form. to use submit specify in 'action' = "string"
+  form method="HTTP method" -> GET is default
+  -->
+  
+ <form action="form.html" method="GET">
+   <label for="username">Name Label</label>
+   <br>
+   <input type="text" name="username" id="username">
+   <br>
+   <label for="school1">School Label - UA</label>
+   <br>
+   <input type="checkbox" name="school" id="school1" value = "school universidade de aveiro">
+   <br>
+   <label for="school2">School Label - UP</label>
+   <br>
+   <input type="radio" name="radio2" id="school2" value="school universidade do porto">
+   <br>
+   <input type="submit" value="smash it!">
+ </form>
+  
+</body>
+</html>
